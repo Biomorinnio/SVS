@@ -12,6 +12,7 @@
     <title>SVS</title>
 
     
+  
 
     <link rel="stylesheet" href="css/reset.css" />
     <link href="fonts/Bebas/stylesheet.css" rel="stylesheet" />
@@ -19,18 +20,118 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
 
-   
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+     />
 
   </head>
   <body>
 
 
+    <menu class="header__menu">
+      <div class="container">
+        
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item"><a href="#welcome" class="footer__nav-link">ГЛАВНАЯ</a></li>
+            <li class="footer__nav-item"><a href="#for" class="footer__nav-link">ДЛЯ КОГО?</a></li>
+            <li class="footer__nav-item"><a href="#learn" class="footer__nav-link">ЧЕМУ НАУЧУСЬ?</a></li>
+            <li class="footer__nav-item"><a href="#program" class="footer__nav-link">ПРОГРАММА ОБУЧЕНИЯ</a></li>
+            <li class="footer__nav-item"><a href="#tariffs" class="footer__nav-link">ТАРИФЫ</a></li>
+            <li class="footer__nav-item"><a href="#about" class="footer__nav-link">ОБ АВТОРЕ</a></li>
+          </ul>
+        </nav>
+
+        <p class="footer__top-line"></p>
+      
+        <ul class="footer__soc-list">
+          <li class="footer__soc-item"><a href="#" class="footer__soc-link">
+            <svg class="footer__soc-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.83489 1.7172C9.76913 1.7172 9.99853 1.72463 10.7628 1.76054C12.726 1.85218 13.643 2.80756 13.7324 4.80625C13.7674 5.5895 13.774 5.82479 13.774 7.80862C13.774 9.79307 13.7668 10.0277 13.7324 10.811C13.6424 12.8078 12.7278 13.7651 10.7628 13.8567C9.99853 13.8926 9.77034 13.9 7.83489 13.9C5.90066 13.9 5.67126 13.8926 4.90759 13.8567C2.93955 13.7644 2.02737 12.8047 1.93802 10.8104C1.90301 10.0271 1.89576 9.79245 1.89576 7.808C1.89576 5.82417 1.90361 5.5895 1.93802 4.80563C2.02797 2.80756 2.94256 1.85156 4.90759 1.75992C5.67186 1.72463 5.90066 1.7172 7.83489 1.7172ZM7.83489 0.37793C5.86746 0.37793 5.62115 0.386598 4.84842 0.42251C2.21753 0.546345 0.755384 2.0435 0.634646 4.74433C0.599028 5.53749 0.590576 5.79012 0.590576 7.808C0.590576 9.82588 0.599028 10.0791 0.634042 10.8717C0.754781 13.57 2.21451 15.0697 4.84782 15.1935C5.62115 15.2294 5.86746 15.2381 7.83489 15.2381C9.80233 15.2381 10.0492 15.2294 10.822 15.1935C13.4504 15.0697 14.9162 13.5725 15.0351 10.8717C15.0708 10.0791 15.0792 9.82588 15.0792 7.808C15.0792 5.79012 15.0708 5.53749 15.0357 4.74495C14.9174 2.04908 13.4559 0.546964 10.8226 0.423129C10.0492 0.386598 9.80233 0.37793 7.83489 0.37793ZM7.83489 3.99266C5.78053 3.99266 4.11494 5.70096 4.11494 7.808C4.11494 9.91504 5.78053 11.624 7.83489 11.624C9.88926 11.624 11.5549 9.91566 11.5549 7.808C11.5549 5.70096 9.88926 3.99266 7.83489 3.99266ZM7.83489 10.2847C6.50134 10.2847 5.42012 9.17637 5.42012 7.808C5.42012 6.44025 6.50134 5.33131 7.83489 5.33131C9.16845 5.33131 10.2497 6.44025 10.2497 7.808C10.2497 9.17637 9.16845 10.2847 7.83489 10.2847ZM11.7022 2.95059C11.2216 2.95059 10.8322 3.34996 10.8322 3.8422C10.8322 4.33444 11.2216 4.73381 11.7022 4.73381C12.1821 4.73381 12.5709 4.33444 12.5709 3.8422C12.5709 3.34996 12.1821 2.95059 11.7022 2.95059Z" fill="#fff"/>
+              <defs>
+              <linearGradient id="paint0_linear_238_10784" x1="0.590576" y1="9.74628" x2="15.0685" y2="10.1404" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#79CFFF"/>
+              <stop offset="1" stop-color="#00AEFF"/>
+              </linearGradient>
+              </defs>
+            </svg>  
+            <span class="footer__soc-text">
+              INSTAGRAM
+            </span>
+   
+          </a></li>
+          <li class="footer__soc-item"><a href="#" class="footer__soc-link">
+            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.9995 0.666112L1.4162 5.91611C0.499531 6.24944 0.499531 6.83278 1.24953 6.99944L4.6662 8.08278L5.99953 12.0828C6.1662 12.4994 6.08286 12.6661 6.49953 12.6661C6.83286 12.6661 6.99953 12.4994 7.1662 12.3328C7.24953 12.2494 7.99953 11.4994 8.83286 10.6661L12.3329 13.2494C12.9995 13.5828 13.4162 13.4161 13.5829 12.6661L15.9162 1.74944C16.1662 0.832778 15.5829 0.332778 14.9995 0.666112ZM13.2495 3.16611L6.74953 9.08278L6.49953 11.8328L5.1662 7.83278L12.8329 2.99944C13.1662 2.74944 13.4995 2.91611 13.2495 3.16611Z" fill="#fff"/>
+              <defs>
+              <linearGradient id="paint0_linear_238_10781" x1="0.706299" y1="8.664" x2="15.9589" y2="9.16995" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#79CFFF"/>
+              <stop offset="1" stop-color="#00AEFF"/>
+              </linearGradient>
+              </defs>
+            </svg>           
+            <span class="footer__soc-text">TELEGRAM</span>
+          </a></li>
+          <li class="footer__soc-item"><a href="#" class="footer__soc-link">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.666992 16.3333L1.78526 12.2675C1.09521 11.0773 0.732616 9.72819 0.733279 8.34476C0.735268 4.01962 4.27168 0.5 8.6168 0.5C10.7254 0.50066 12.7047 1.31806 14.1935 2.80111C15.6817 4.28417 16.501 6.25542 16.5003 8.35201C16.4983 12.6778 12.9619 16.1974 8.6168 16.1974C7.29769 16.1968 5.9978 15.8676 4.84639 15.2422L0.666992 16.3333ZM5.03995 13.8218C6.15092 14.4782 7.21152 14.8714 8.61415 14.872C12.2255 14.872 15.1673 11.9468 15.1693 8.35069C15.1706 4.74729 12.2427 1.82604 8.61945 1.82472C5.00548 1.82472 2.06565 4.74993 2.06432 8.34542C2.06366 9.8133 2.49585 10.9124 3.2217 12.0623L2.55949 14.469L5.03995 13.8218ZM12.5881 10.217C12.539 10.1352 12.4078 10.0864 12.2102 9.98812C12.0134 9.88983 11.0449 9.41549 10.8639 9.35017C10.6836 9.28486 10.5524 9.25187 10.4205 9.44847C10.2892 9.64441 9.91139 10.0864 9.79671 10.217C9.68204 10.3477 9.5667 10.3642 9.36982 10.2659C9.17295 10.1676 8.53792 9.96108 7.78556 9.29278C7.20025 8.77292 6.80451 8.13101 6.68984 7.93441C6.57516 7.73847 6.6779 7.63226 6.77601 7.53462C6.86483 7.44688 6.97288 7.30569 7.07165 7.1909C7.17174 7.07743 7.20422 6.99563 7.27051 6.86434C7.33614 6.73372 7.30366 6.61892 7.25394 6.52063C7.20422 6.42299 6.81048 5.45781 6.64675 5.06528C6.48634 4.6833 6.32393 4.73476 6.20329 4.72882L5.82545 4.72222C5.6942 4.72222 5.48076 4.77104 5.30046 4.96764C5.12016 5.16424 4.61107 5.63792 4.61107 6.60309C4.61107 7.56826 5.31703 8.50045 5.41514 8.63108C5.5139 8.7617 6.80385 10.7422 8.77987 11.5913C9.24984 11.7931 9.61707 11.9139 9.90277 12.0042C10.3747 12.1533 10.8043 12.1322 11.1437 12.0821C11.5222 12.026 12.309 11.6077 12.4734 11.1499C12.6378 10.6914 12.6378 10.2989 12.5881 10.217Z" fill="#fff"/>
+              <defs>
+              <linearGradient id="paint0_linear_238_10787" x1="0.666992" y1="10.4819" x2="16.488" y2="10.9236" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#79CFFF"/>
+              <stop offset="1" stop-color="#00AEFF"/>
+              </linearGradient>
+              </defs>
+            </svg>               
+            <span class="footer__soc-text">       WHATSAPP</span>
+          </a></li>
+          <li class="footer__soc-item"><a href="#" class="footer__soc-link">
+            <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19.1302 9.23666C18.6948 8.71395 18.1999 8.24547 17.7214 7.7924C17.5512 7.63127 17.3753 7.46468 17.2057 7.29904C16.7187 6.82296 16.701 6.6441 17.0865 6.10333C17.3532 5.73058 17.636 5.35734 17.9095 4.99637C18.1576 4.66888 18.4141 4.3302 18.66 3.99043L18.7105 3.92057C19.1804 3.27036 19.6664 2.59803 19.925 1.78697C19.9922 1.57298 20.0627 1.25809 19.9014 0.994786C19.7403 0.731698 19.4277 0.651434 19.2066 0.613945C19.0972 0.595393 18.9886 0.592861 18.8878 0.592861L15.8104 0.590659L15.785 0.590439C15.3197 0.590439 15.0061 0.809705 14.8264 1.26085C14.6549 1.69189 14.4664 2.15091 14.2514 2.58735C13.8235 3.45644 13.28 4.45743 12.4936 5.29227L12.4604 5.32778C12.3675 5.42758 12.2623 5.5406 12.1854 5.5406C12.1736 5.5406 12.1608 5.53835 12.1463 5.53378C11.9834 5.4703 11.874 5.07598 11.879 4.89255C11.8791 4.89001 11.8791 4.88748 11.8791 4.88495L11.877 1.32812C11.877 1.31579 11.8761 1.30357 11.8745 1.29134C11.7962 0.713146 11.6228 0.353224 10.9676 0.224901C10.9502 0.221433 10.9324 0.219727 10.9147 0.219727H7.71479C7.19346 0.219727 6.90621 0.431617 6.63618 0.748765C6.5633 0.833543 6.41158 1.01004 6.48678 1.22413C6.56308 1.44141 6.81075 1.48788 6.8914 1.50296C7.29173 1.57915 7.51738 1.82402 7.58129 2.25187C7.69288 2.99484 7.70659 3.78784 7.62445 4.74754C7.60155 5.01426 7.55625 5.22026 7.4816 5.39626C7.46426 5.43733 7.40277 5.57138 7.34006 5.57143C7.32013 5.57143 7.2625 5.56361 7.15751 5.49128C6.90929 5.32123 6.72768 5.07856 6.51595 4.77881C5.79567 3.76087 5.19116 2.63948 4.66762 1.34981C4.47346 0.875051 4.11084 0.609266 3.6461 0.601449C3.13545 0.593686 2.67247 0.589943 2.23091 0.589943C1.74845 0.589943 1.30116 0.594402 0.864385 0.603486C0.49048 0.610092 0.231852 0.722175 0.0957664 0.936873C-0.0405393 1.15174 -0.0316761 1.43398 0.122136 1.77563C1.3534 4.51292 2.46978 6.50317 3.742 8.22912C4.63344 9.43682 5.52757 10.2728 6.55559 10.8597C7.63866 11.4793 8.85242 11.7805 10.2661 11.7805C10.4264 11.7805 10.5921 11.7766 10.7592 11.7688C11.5806 11.7288 11.8854 11.4314 11.9239 10.6316C11.9423 10.2228 11.987 9.79416 12.1879 9.42856C12.3147 9.19823 12.433 9.19823 12.4718 9.19823C12.5467 9.19823 12.6395 9.23269 12.7392 9.29727C12.918 9.41398 13.0713 9.57032 13.197 9.7069C13.3153 9.83666 13.4323 9.96773 13.5494 10.0989C13.8021 10.3819 14.0634 10.6745 14.3363 10.952C14.9337 11.5598 15.5918 11.8271 16.3477 11.7691H19.1692C19.1752 11.7691 19.1813 11.7689 19.1873 11.7685C19.4684 11.7499 19.7119 11.594 19.8553 11.3406C20.033 11.0268 20.0294 10.6264 19.8457 10.2694C19.6374 9.86561 19.3671 9.52066 19.1302 9.23666Z" fill="#fff"/>
+              <defs>
+              <linearGradient id="paint0_linear_238_10795" x1="-0.000244286" y1="7.50804" x2="19.9532" y2="8.47171" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#79CFFF"/>
+              <stop offset="1" stop-color="#00AEFF"/>
+              </linearGradient>
+              </defs>
+            </svg>
+            <span class="footer__soc-text">VKONTAKTE</span>
+          </a></li>
+     
+        </ul>
+
+      </div>
+    </menu>
+
+    <div class="popup__auth">
+      <div class="container">
+        <h4 class="popup__auth-title">АВТОРИЗАЦИЯ ДЛЯ УЧАСТНИКОВ КУРСА</h4>
+        <h6 class="popup__auth-subtitle">АВТОРИЗИРУЙТЕСЬ ДЛЯ ВХОДА НА ПЛАТФОРМУ</h6>
+        <form class="popup__auth-form">
+          <label for="username"></label>
+          <input class="popup__auth-input" type="text" id="login" name="username" placeholder="ВВЕДИТЕ ЛОГИН"/>
+          <label for="pass"></label>
+          <input class="popup__auth-input" type="password" id="pass" name="password" required placeholder="ВВЕДИТЕ ПАРОЛЬ"/>
+
+          <button type="button" class="popup__auth-btn">ВОЙТИ</button>
+        </form>
+      </div>
+    </div>
+
     <header class="header">
       <div class="container">
         <div class="header__inner">
           <button class="header__btn-auth">
-            <img src="img/header__btn-auth.svg" alt="" class="header__btn-img">
-            ВХОД ДЛЯ УЧАСТНИКОВ КУРСА
+            <svg class="header_btn-img" width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.79019 5.55415C6.16519 5.55415 7.27283 4.44651 7.27283 3.07151C7.27283 1.69651 6.16519 0.588867 4.79019 0.588867C3.43429 0.588867 2.30755 1.69651 2.30755 3.07151C2.30755 4.44651 3.41519 5.55415 4.79019 5.55415ZM4.80929 5.8788C0.684289 5.82151 0.932553 9.67914 0.932553 9.67914H8.62873C8.62873 9.67914 8.68603 5.93609 4.80929 5.8788Z" fill="url(#paint0_linear_2004_738)"/>
+              <defs>
+              <linearGradient id="paint0_linear_2004_738" x1="0.929687" y1="6.3197" x2="8.62448" y2="6.50164" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#79CFFF"/>
+              <stop offset="1" stop-color="#00AEFF"/>
+              </linearGradient>
+              </defs>
+            </svg>  
+            <span>ВХОД ДЛЯ УЧАСТНИКОВ КУРСА</span>
           </button>
           <ul class="header__list">
             <li class="header__item">
@@ -51,15 +152,18 @@
               <span class="header__item-text">ДЛИТЕЛЬНОСТЬ 4 НЕДЕЛИ</span>
             </li>
           </ul>
-          <menu class="header__menu">
+          <button class="header__menu-btn">
             <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1 1H9M1 5H9M1 9H9" stroke="white" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            МЕНЮ  
-          </menu>
+            <span>МЕНЮ</span>  
+          </button>
         </div>
 
       </div>
+
+    
+
     </header>
 
     <main class="main">
@@ -67,6 +171,7 @@
       <section class="welcome" id="welcome">
         <img src="img/author.png" alt="" class="welcome__back-img">
         <div class="container">
+          <h2 class="welcome__mobile-title mobile">ОТКРОЙ МИР БЕЗ ГРАНИЦ</h2>
           <div class="welcome__inner-toptitles">
             <h4 class="welcome__toptitle">Открой</h4>
             <h4 class="welcome__toptitle">СТАНЬ ВИЗОВЫМ СПЕЦИАЛИСТОМ</h4>
@@ -81,9 +186,11 @@
           </div>
 
           <button class="welcome__btn">
-            ПРИНЯТЬ УЧАСТИЕ
-            <img src="img/btn__hover-img.svg" alt="" class="btn__hover-img">
-            <img src="img/btn__hover-img.svg" alt="" class="btn__hover-img">
+            
+            <p>
+              ПРИНЯТЬ УЧАСТИЕ
+            </p>
+
             <img src="img/welcome__btn-back.png" alt="" class="welcome__btn-back">
             
           </button>
@@ -158,9 +265,11 @@
           </ul>
 
           <button class="for__btn">
-            ПРИНЯТЬ УЧАСТИЕ
-            <img src="img/btn__hover-img.svg" alt="" class="btn__hover-img">
-            <img src="img/btn__hover-img.svg" alt="" class="btn__hover-img">
+            
+            <p>
+              ПРИНЯТЬ УЧАСТИЕ
+            </p>
+
             <img src="img/for__btn-back.png" alt="" class="for__btn-back">
           </button>
         </div>
@@ -172,6 +281,8 @@
           <img src="img/title-img.svg" alt="" class="for__title-img">
           <h4 class="for__toptitle">За 4 недели обучения</h4>
           <h2 class="for__title">С 0 ТЫ НАУЧИШЬСЯ</h2>
+
+          <img src="img/learn__inner.png" alt="" class="learn__inner-img mobile">
 
           <div class="learn__inner">
             <ul class="learn__list">
@@ -202,6 +313,15 @@
             </ul>
 
             <img src="img/learn__inner.png" alt="" class="learn__inner-img">
+
+            <button class="for__btn learn__inner-btn">
+            
+              <p>
+                ПРИНЯТЬ УЧАСТИЕ
+              </p>
+  
+              <img src="img/for__btn-back.png" alt="" class="for__btn-back">
+            </button>
 
             <ul class="learn__list">
               <li class="learn__item">
@@ -263,9 +383,11 @@
           </div>
 
           <button class="for__btn">
-            ПРИНЯТЬ УЧАСТИЕ
-            <img src="img/btn__hover-img.svg" alt="" class="btn__hover-img">
-            <img src="img/btn__hover-img.svg" alt="" class="btn__hover-img">
+            
+            <p>
+              ПРИНЯТЬ УЧАСТИЕ
+            </p>
+
             <img src="img/for__btn-back.png" alt="" class="for__btn-back">
           </button>
 
@@ -407,7 +529,7 @@
 
                     <p class="program__descr-line"></p>
 
-                    <span class="program__content-item">Полное представление о визах каждой страны Шенгена и их нюансы. Виды и типы виз, базовая информация по работе со странами Шенгена. Какие виды анкет существует. Переводы документов. Правила первого въезда в страну Шенгена Туристическая виза, студенческая, рабочая и виза цифрового кочевника. Алгоритм подачи визы в Венгрию, Польшу,Латвию, Литву, Словакию, Испанию, Португалию, Грецию, Италию, Румынию, Хорватию, Кипр, Болгарию</span>
+                    <span class="program__content-item">Полное представление о визах каждой страны Шенгена и их нюансы. Виды и типы виз, базовая информация по работе со странами Шенгена. Какие виды анкет существует.Переводы документов. Правила первого въезда в страну ШенгенаТуристическая виза, студенческая, рабочая и виза цифрового кочевника.Алгоритм подачи визы в Венгрию, Польшу,Латвию, Литву, Словакию, Испанию, Португалию, Грецию, Италию, Румынию, Хорватию, Кипр, Болгарию</span>
 
                   </div>
 
@@ -457,7 +579,7 @@
 
                     <p class="program__descr-line"></p>
 
-                    <span class="program__content-item">Полное представление о визах в Азию и их нюансы. Виды и типы виз, базовая информация по работес азиатскими странами. Какие виды анкет существует. Переводы документов.  Туристическая виза, корейская КЕТА, студенческая, рабочая. Алгоритм подачи визы в Таиланд, Южную Корею, Японию, Китай.</span>
+                    <span class="program__content-item">Полное представление о визах в Азию и их нюансы. Виды и типы виз, базовая информация по работес азиатскими странами. Какие виды анкет существует.Переводы документов. Туристическая виза, корейская КЕТА, студенческая, рабочая.Алгоритм подачи визы в Таиланд, Южную Корею, Японию, Китай.</span>
 
                   </div>
 
@@ -481,7 +603,7 @@
                     <ul class="program__descr-list">
                       <article class="program__descr-item">
                         <span class="program__descr-lesson">Урок 1 -</span>
-                        <span class="program__descr-name">Соединенные Штаты Америки  </span>
+                        <span class="program__descr-name">Соединенные Штаты Америки</span>
                       </article>
                       <article class="program__descr-item">
                         <span class="program__descr-lesson">Урок 2 -</span>
@@ -524,7 +646,7 @@
                 <div class="program__border-box">
 
                   <div class="program__item-descr">
-                    <h4 class="program__item-title">“СЛОЖНЫЕ ВИЗЫ”</h4>
+                    <h4 class="program__item-title">ЧТО ДЕЛАТЬ ДАЛЬШЕ? ПУТИ РАЗВИТИЯ СПЕЦИАЛИСТА.</h4>
 
                     <p class="program__descr-line"></p>
 
@@ -681,9 +803,14 @@
               <p class="price__text-old">24.999₽</p>
               <p class="price__text-new">14.999₽</p>
 
-              <button class="tariffs__btn">ПРИНЯТЬ УЧАСТИЕ
-                <img src="img/btn__hover-img.svg" alt="" class="btn__hover-img">
-                <img src="img/btn__hover-img.svg" alt="" class="btn__hover-img">
+              <button class="tariffs__btn">
+                <p>
+                  ПРИНЯТЬ УЧАСТИЕ
+                </p>
+  
+
+  
+
               </button>
 
             </li>
@@ -750,9 +877,14 @@
               <p class="price__text-old">29.999₽</p>
               <p class="price__text-new">19.999₽</p>
 
-              <button class="tariffs__btn">ПРИНЯТЬ УЧАСТИЕ
-                <img src="img/btn__hover-img.svg" alt="" class="btn__hover-img">
-                <img src="img/btn__hover-img.svg" alt="" class="btn__hover-img">
+              <button class="tariffs__btn">
+                <p>
+                  ПРИНЯТЬ УЧАСТИЕ
+                </p>
+  
+
+  
+
               </button>
 
             </li>
@@ -819,13 +951,259 @@
               <p class="price__text-old">44.999₽</p>
               <p class="price__text-new">34.999₽</p>
 
-              <button class="tariffs__btn">ПРИНЯТЬ УЧАСТИЕ
-                <img src="img/btn__hover-img.svg" alt="" class="btn__hover-img">
-                <img src="img/btn__hover-img.svg" alt="" class="btn__hover-img">
+              <button class="tariffs__btn">
+                <p>
+                  ПРИНЯТЬ УЧАСТИЕ
+                </p>
+  
+
+  
+
               </button>
 
             </li>
           </ul>
+
+          <div class="swiper-tariffs mobile">
+
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <li class="tariffs__item">
+                  <img src="img/tariffs__item-1.svg" alt="" class="tariffs__item-img">
+    
+                  <h3 class="tariffs__item-title">ЭКОНОМ ТАРИФ</h3>
+                  <h5 class="tariffs__item-subtitle">БЕЗЛИМИТ</h5>
+    
+                  <ul class="tariffs__list-eco">
+                    <h4 class="tariffs__list-title">ЭКОНОМ ТАРИФ</h4>
+                    <li class="tariffs__list-item">
+                      Доступ к онлайн-платформе курса на 1 месяц
+                    </li>
+                    <li class="tariffs__list-item">
+                      Доступ только к модулю: 1,2.
+                    </li>
+                    <li class="tariffs__list-item">
+                      Чат-болталка с участниками курса
+                    </li>
+                    <li class="tariffs__list-item">
+                      Видеолекции и вебинары
+                    </li>
+                    <li class="tariffs__list-item">
+                      Чат-болталка с участниками курса
+                    </li>
+                  </ul>
+    
+                  <ul class="tariffs__list-basic">
+                    <h4 class="tariffs__list-title">БАЗОВЫЙ ТАРИФ</h4>
+                    <li class="tariffs__list-item">
+                      Доступ к онлайн-платформе курса на 6 месяцев
+                    </li>
+                    <li class="tariffs__list-item">
+                      Все учебные материалы
+                    </li>
+                    <li class="tariffs__list-item">
+                      Видеолекции и вебинары
+                    </li>
+                    <li class="tariffs__list-item">
+                      Практические задания и упражнения
+                    </li>
+                    <li class="tariffs__list-item">
+                      Чат-болталка с участниками курса
+                    </li>
+                    <li class="tariffs__list-item">
+                      Сертификат о прохождении курса
+                    </li>
+                  </ul>
+    
+                  <ul class="tariffs__list-prem">
+                    <h4 class="tariffs__list-title">ПРЕМИУМ ТАРИФ</h4>
+                    <li class="tariffs__list-item">
+                      Индивидуальный подход к каждому ученику
+                    </li>
+                    <li class="tariffs__list-item">
+                      Поддержка преподавателя во время обучения и даже после!
+                    </li>
+                    <li class="tariffs__list-item">
+                      Доступ к онлайн-платформе курса навсегда
+                    </li>
+                  </ul>
+    
+                  <p class="price__text-old">24.999₽</p>
+                  <p class="price__text-new">14.999₽</p>
+    
+                  <button class="tariffs__btn">
+                    <p>
+                      ПРИНЯТЬ УЧАСТИЕ
+                    </p>
+      
+    
+      
+    
+                  </button>
+    
+                </li>
+              </div>
+              <div class="swiper-slide">
+                <li class="tariffs__item">
+                  <img src="img/tariffs__item-2.svg" alt="" class="tariffs__item-img">
+    
+                  <h3 class="tariffs__item-title">БАЗОВЫЙ ТАРИФ</h3>
+                  <h5 class="tariffs__item-subtitle">ЛИМИТ 100 МЕСТ</h5>
+    
+                  <ul class="tariffs__list-eco">
+                    <h4 class="tariffs__list-title">ЭКОНОМ ТАРИФ</h4>
+                    <li class="tariffs__list-item">
+                      Доступ к онлайн-платформе курса на 1 месяц
+                    </li>
+                    <li class="tariffs__list-item">
+                      Доступ только к модулю: 1,2.
+                    </li>
+                    <li class="tariffs__list-item">
+                      Чат-болталка с участниками курса
+                    </li>
+                    <li class="tariffs__list-item">
+                      Видеолекции и вебинары
+                    </li>
+                    <li class="tariffs__list-item">
+                      Чат-болталка с участниками курса
+                    </li>
+                  </ul>
+    
+                  <ul class="tariffs__list-basic">
+                    <h4 class="tariffs__list-title">БАЗОВЫЙ ТАРИФ</h4>
+                    <li class="tariffs__list-item">
+                      Доступ к онлайн-платформе курса на 6 месяцев
+                    </li>
+                    <li class="tariffs__list-item">
+                      Все учебные материалы
+                    </li>
+                    <li class="tariffs__list-item">
+                      Видеолекции и вебинары
+                    </li>
+                    <li class="tariffs__list-item">
+                      Практические задания и упражнения
+                    </li>
+                    <li class="tariffs__list-item">
+                      Чат-болталка с участниками курса
+                    </li>
+                    <li class="tariffs__list-item">
+                      Сертификат о прохождении курса
+                    </li>
+                  </ul>
+    
+                  <ul class="tariffs__list-prem">
+                    <h4 class="tariffs__list-title">ПРЕМИУМ ТАРИФ</h4>
+                    <li class="tariffs__list-item">
+                      Индивидуальный подход к каждому ученику
+                    </li>
+                    <li class="tariffs__list-item">
+                      Поддержка преподавателя во время обучения и даже после!
+                    </li>
+                    <li class="tariffs__list-item">
+                      Доступ к онлайн-платформе курса навсегда
+                    </li>
+                  </ul>
+    
+                  <p class="price__text-old">29.999₽</p>
+                  <p class="price__text-new">19.999₽</p>
+    
+                  <button class="tariffs__btn">
+                    <p>
+                      ПРИНЯТЬ УЧАСТИЕ
+                    </p>
+      
+    
+      
+    
+                  </button>
+    
+                </li>
+              </div>
+              <div class="swiper-slide">
+                <li class="tariffs__item">
+                  <img src="img/tariffs__item-3.svg" alt="" class="tariffs__item-img">
+    
+                  <h3 class="tariffs__item-title">ПРЕМИУМ ТАРИФ</h3>
+                  <h5 class="tariffs__item-subtitle">ЛИМИТ 15 МЕСТ</h5>
+    
+                  <ul class="tariffs__list-eco">
+                    <h4 class="tariffs__list-title">ЭКОНОМ ТАРИФ</h4>
+                    <li class="tariffs__list-item">
+                      Доступ к онлайн-платформе курса на 1 месяц
+                    </li>
+                    <li class="tariffs__list-item">
+                      Доступ только к модулю: 1,2.
+                    </li>
+                    <li class="tariffs__list-item">
+                      Чат-болталка с участниками курса
+                    </li>
+                    <li class="tariffs__list-item">
+                      Видеолекции и вебинары
+                    </li>
+                    <li class="tariffs__list-item">
+                      Чат-болталка с участниками курса
+                    </li>
+                  </ul>
+    
+                  <ul class="tariffs__list-basic">
+                    <h4 class="tariffs__list-title">БАЗОВЫЙ ТАРИФ</h4>
+                    <li class="tariffs__list-item">
+                      Доступ к онлайн-платформе курса на 6 месяцев
+                    </li>
+                    <li class="tariffs__list-item">
+                      Все учебные материалы
+                    </li>
+                    <li class="tariffs__list-item">
+                      Видеолекции и вебинары
+                    </li>
+                    <li class="tariffs__list-item">
+                      Практические задания и упражнения
+                    </li>
+                    <li class="tariffs__list-item">
+                      Чат-болталка с участниками курса
+                    </li>
+                    <li class="tariffs__list-item">
+                      Сертификат о прохождении курса
+                    </li>
+                  </ul>
+    
+                  <ul class="tariffs__list-prem">
+                    <h4 class="tariffs__list-title">ПРЕМИУМ ТАРИФ</h4>
+                    <li class="tariffs__list-item">
+                      Индивидуальный подход к каждому ученику
+                    </li>
+                    <li class="tariffs__list-item">
+                      Поддержка преподавателя во время обучения и даже после!
+                    </li>
+                    <li class="tariffs__list-item">
+                      Доступ к онлайн-платформе курса навсегда
+                    </li>
+                  </ul>
+    
+                  <p class="price__text-old">44.999₽</p>
+                  <p class="price__text-new">34.999₽</p>
+    
+                  <button class="tariffs__btn">
+                    <p>
+                      ПРИНЯТЬ УЧАСТИЕ
+                    </p>
+      
+    
+      
+    
+                  </button>
+    
+                </li>
+              </div>
+
+        
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+          </div>
+
         </div>
       </section>
 
@@ -834,6 +1212,20 @@
 
           <h4 class="for__toptitle">Автор и Спикер</h4>
           <h2 class="for__title">светлана батоцыренова </h2>
+
+          <div class="about__content mobile">
+
+            <img src="img/author.png" alt="" class="about__content-img">                 
+            <button class="welcome__btn">
+              
+              <p>
+                ПРИНЯТЬ УЧАСТИЕ
+              </p>
+
+              <img src="img/welcome__btn-back.png" alt="" class="welcome__btn-back">
+            </button>
+
+          </div>
 
           <div class="about__inner">
 
@@ -891,9 +1283,14 @@
 
               <img src="img/author.png" alt="" class="about__content-img">                 
               <button class="welcome__btn">
-                ПРИНЯТЬ УЧАСТИЕ
-                <img src="img/btn__hover-img.svg" alt="" class="btn__hover-img">
-                <img src="img/btn__hover-img.svg" alt="" class="btn__hover-img">
+                
+                <p>
+                  ПРИНЯТЬ УЧАСТИЕ
+                </p>
+  
+
+  
+
                 <img src="img/welcome__btn-back.png" alt="" class="welcome__btn-back">
               </button>
 
@@ -920,7 +1317,7 @@
                 <li class="about__descr-item">
                   <h4 class="about__descr-title">НАУЧУ ВАС</h4>
                   <p class="about__descr-text">
-                    Понимать сложные визовые процедуры и требования. Эффективно собирать и подавать документы на визу.Избегать распространенных ошибок, которые могут привести к отказу в визе.Общаться с визовыми офицерами и консульствами.Предоставлять высококачественные услуги твоим клиентам.
+                    Понимать сложные визовые процедуры и требования.Эффективно собирать и подавать документы на визу.Избегать распространенных ошибок, которые могут привести к отказу в визе.Общаться с визовыми офицерами и консульствами.Предоставлять высококачественные услуги твоим клиентам.
                   </p>
                   <img src="img/about__text-back.png" alt="" class="about__descr-img">
                 </li>
@@ -950,6 +1347,103 @@
 
           </div>
 
+          <div class="about__descr numbers">
+
+            <ul class="about__descr-list">
+              <li class="about__descr-item">
+                <img src="img/about__descr-1.webp" alt="" class="about__descr-img">
+              </li>
+              
+              <li class="about__descr-item">
+                <h4 class="about__descr-title">ПРО МЕНЯ</h4>
+                <p class="about__descr-text">
+                  Меня зовут Светлана, и я сертифицированный визовый специалист с достаточным опытом в индустрии визовых услуг. Я помогла большому количеству людей успешно получить визы для различных целей, включая учебу, путешествия и иммиграцию.
+                </p>
+                <img src="img/about__text-back.png" alt="" class="about__descr-img">
+              </li>
+              
+            </ul>
+
+            <ul class="about__descr-list">
+              <li class="about__descr-item">
+                <img src="img/about__descr-2.webp" alt="" class="about__descr-img">
+              </li>
+              <li class="about__descr-item">
+                <h4 class="about__descr-title">Я ЗНАЮ</h4>
+                <p class="about__descr-text">
+                  Что мой курс даст вам необходимые знания и навыки, чтобы стать успешным визовым специалистом и помочь вашим клиентам достичь своих целей в получении визы. Нужен текст текст текст текст текст текст текст текст текст текст текст текст текст текст.
+                </p>
+                <img src="img/about__text-back.png" alt="" class="about__descr-img">
+              </li>
+            </ul>
+
+            <ul class="about__descr-list">
+              <li class="about__descr-item">
+                <img src="img/about__descr-3.webp" alt="" class="about__descr-img">
+              </li>
+              <li class="about__descr-item">
+                <h4 class="about__descr-title">ЗА СВОЮ КАРЬЕРУ</h4>
+                <p class="about__descr-text">
+                  Я успешно подала заявления на получение виз для клиентов из более чем 10 стран. С моей работой я работаю из дома в любом кафе, коворкинг-центре при этом зарабатывая от 100 000 рублей в месяц. Я путешестую каждый месяц в разные страны, хотя раньше могла об этом только мечтать. Мне не составляет труда сделать абсолютно любую визу для моих поездок и я хочу научить Вас этому.
+                </p>
+                <img src="img/about__text-back.png" alt="" class="about__descr-img">
+              </li>
+            </ul>
+
+            <ul class="about__descr-list">
+              <li class="about__descr-item">
+                <img src="img/about__descr-4.webp" alt="" class="about__descr-img">
+              </li>
+              <li class="about__descr-item">
+                <h4 class="about__descr-title">НАУЧУ ВАС</h4>
+                <p class="about__descr-text">
+                  Понимать сложные визовые процедуры и требования.Эффективно собирать и подавать документы на визу.Избегать распространенных ошибок, которые могут привести к отказу в визе.Общаться с визовыми офицерами и консульствами.Предоставлять высококачественные услуги твоим клиентам.
+                </p>
+                <img src="img/about__text-back.png" alt="" class="about__descr-img">
+              </li>
+            </ul>
+
+            <div class="about__descr-bottom">
+              <article class="about__descr-article">
+                <h3 class="about__article-title">
+                  97.5%
+                </h3>
+                <h5 class="about__article-subtitle">
+                  УСПЕШНОСТЬ ВИЗ
+                </h5>
+              </article>
+              <article class="about__descr-article">
+                <h3 class="about__article-title">
+                  99%
+                </h3>
+                <h5 class="about__article-subtitle">
+                  ПОДДЕРЖКА
+                </h5>
+              </article>
+
+              <article class="about__descr-article">
+                <h3 class="about__article-title">
+                  5
+                </h3>
+                <h5 class="about__article-subtitle">
+                  СТРАН пАРТНЁРОВ
+                </h5>
+              </article>
+              <article class="about__descr-article">
+                <h3 class="about__article-title">
+                  20+
+                </h3>
+                <h5 class="about__article-subtitle">
+                  СТРАН ПОСЕТИЛА
+                </h5>
+              </article>
+           
+            </div>
+
+
+          </div>
+
+
         </div>
       </section>
 
@@ -958,6 +1452,10 @@
     <footer class="footer" id="footer">
 
         <div class="footer__inner-top">
+
+          <p class="footer__rights numbers">2024 ALL RIGHTS RESERVED</p>
+          <h5 class="footer__title numbers">SVETA VOKRUG SVETA</h5>
+
           <div class="container">
             <p class="footer__rights">2024 ALL RIGHTS RESERVED</p>
             <h5 class="footer__title">SVETA VOKRUG SVETA</h5>
@@ -1026,6 +1524,7 @@
         
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 
 
