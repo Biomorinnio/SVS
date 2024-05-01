@@ -115,8 +115,11 @@ ul {
 
 .header {
   background: url("../img/header__back.png") no-repeat center;
-  position: relative;
+  position: fixed;
+  top: -5px;
+  width: 100%;
   z-index: 99;
+  
 }
 
 .header__inner {
@@ -148,16 +151,124 @@ ul {
 
 /*/ header-menu /*/
 
-.header__menu, .popup__auth{
+.header__menu, .popup__auth, .popup__note{
   position: fixed;
   width: 100%;
-  top: 60px;
+  top: 54px;
   z-index: 98;
-  height: calc(100svh - 60px);
+  height: calc(100svh - 50px);
   background: #fff;
   transition: .3s all ease;
   transform: translateY(-110%);
 }
+
+/*/ popup-note /*/
+
+.popup__note{
+  background: transparent;
+  backdrop-filter: blur(50px);
+}
+
+.popup__note .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.popup__note-inner{
+  background: #fff;
+  border-radius: 10px;
+  padding: 38px 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 55px;
+  position: relative;
+  z-index: 1;
+}
+
+.popup__note .popup__auth-subtitle{
+  margin: 0px 0 13px;
+}
+
+.popup__note .popup__auth-form{
+  min-width: 308px;
+}
+
+.popup__secure-text{
+  max-width: 213px;
+  display: block;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  color: #b2b2b2;
+  text-align: center;
+}
+
+.popup__note-secure{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.popup__note-link{
+  margin-top: 70px;
+  background: #FFFFFF;
+  border-radius: 40px;
+  padding: 16px 23px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #626262;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+}
+
+.popup__note-link:hover{
+  opacity: 0.7;
+}
+
+.popup__note .popup__auth-btn::after{
+  content: '';
+  color: #FE0000;
+  font-size: 8px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  top: -14px;
+  transform: translate(-50%, 0%);
+  left: 50%;
+  min-width: 205px;
+  opacity: 0;
+  transition: .3s all ease;
+
+}
+.popup__note .popup__auth-btn.error-name::after{
+  content: 'ЗАПОЛНИТЕ ФОРМУ “Ф.И.О”';
+  opacity: 1;
+}
+.popup__note .popup__auth-btn.error-tel::after{
+  content: 'ЗАПОЛНИТЕ ФОРМУ “НОМЕР ТЕЛЕФОНА””';
+  opacity: 1;
+}
+.popup__note .popup__auth-btn.error-inst::after{
+  content: 'ЗАПОЛНИТЕ ФОРМУ “ССЫЛКА НА INSTAGRAM”';
+  opacity: 1;
+}
+.popup__note .popup__auth-btn.success::after{
+  content: 'Успешно!';
+  opacity: 1;
+  font-size: 10px;
+  color: green;
+}
+
+/*/ popup-note /*/
+
+
 
 /*/ popup-auth /*/
 
@@ -275,7 +386,7 @@ ul {
 }
 
 
-.header__menu.active, .popup__auth.active{
+.header__menu.active, .popup__auth.active, .popup__note.active{
   
   transform: translateY(0%);
 }
@@ -396,6 +507,10 @@ ul {
   font-family: "Montserrat", sans-serif;
   border-radius: 20px;
   cursor: pointer;
+}
+
+.main{
+  margin-top: 63px;
 }
 
 .welcome {
@@ -1827,6 +1942,29 @@ button::before {
     left: -50px;
     top: 5px;
   }
+
+  .header__menu:before{
+    width: 100px;
+    height: 90px;
+    left: 20px;
+    top: 30px;
+  }
+  .header__menu:after{
+    width: 100px;
+    height: 90px;
+    right: 20px;
+    top: 30px;
+  }
+  .popup__auth:before{
+    width: 100px;
+    height: 90px;
+    top: 107px;
+  }
+  .popup__auth:after{
+    width: 100px;
+    height: 90px;
+    top: 107px;
+  }
 }
 
 @media (max-width: 1080px) {
@@ -2146,15 +2284,42 @@ button::before {
   .footer__bottom-img {
     height: 78px;
   }
+  .header__menu.active ~ .header .header__list{
+    margin-right: 109px;
+  }
+
+  .header__menu:before{
+    content: unset;
+  }
+  .header__menu:after{
+    content: unset;
+  }
+  .header__menu .container {
+    padding-top: 33px;
+}
+  .popup__auth:before{
+    left: 55px;
+  }
+  .popup__auth:after{
+    right: 55px;
+  }
+ 
 }
 
 @media (max-width: 768px) {
   .header__btn-auth span,
-  .header__menu span {
+  .header__menu-btn span {
     display: none;
   }
   .header__list {
     margin-right: 0px;
+    
+  }
+  .header__menu.active ~ .header .header__list{
+    margin-right: 0px;
+  }
+  .popup__auth.active ~ .header .header__list{
+    margin-left: 0px;
   }
   .header__btn-auth {
     background: linear-gradient(90deg, #79cfff 0%, #00aeff 100%);
@@ -2540,5 +2705,33 @@ button::before {
 .footer__bottom-title {
   font-size: 16px;
   letter-spacing: calc(16px / 10);
+}
+
+.popup__auth:before{
+ content: unset;
+}
+.popup__auth:after{
+  content: unset;
+}
+.header__menu .container{
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+.header__menu .footer__top-line{
+  width: 1px;
+  min-width: 1px;
+  margin-right: 27px;
+}
+.header__menu .footer__soc-link {
+  padding: 0;
+  width: 137px;
+  height: 30px;
+  justify-content: center;
+}
+.header__menu .footer__nav-list{
+  gap: 29px;
+  margin-top: -5px;
+
 }
 }

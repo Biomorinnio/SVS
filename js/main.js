@@ -41,7 +41,7 @@ burgerBtn.addEventListener('click', ()=>{
     blockScroll();
     burgerMenu.classList.add('active');
     burgerBtnText.textContent = 'ЗАКРЫТЬ'
-
+    notePopup.classList.remove('active');
     authPopup.classList.remove('active');
   }
 })
@@ -55,12 +55,13 @@ for(let i of burgerMenuLinks) i.addEventListener('click', ()=>{
 const authBtn = document.querySelector('.header__btn-auth');
 const authBtnText = document.querySelector('.header__btn-auth span');
 const authPopup = document.querySelector('.popup__auth');
-const authFormBtn = document.querySelector('.popup__auth-btn')
+const authFormBtn = document.querySelector('.popup__auth .popup__auth-btn');
 
 authBtn.addEventListener('click', ()=>{
   if(authPopup.classList.contains('active')){
     authPopup.classList.remove('active');
     authBtnText.textContent = 'ВХОД ДЛЯ УЧАСТНИКОВ КУРСА';
+    unblockScroll();
   }
   else{
     blockScroll();
@@ -68,12 +69,54 @@ authBtn.addEventListener('click', ()=>{
     burgerMenu.classList.remove('active');
     burgerBtnText.textContent = 'МЕНЮ';
     authBtnText.textContent = 'ВЫХОД';
+    notePopup.classList.remove('active');
   }
-
+  
 })
 
 authFormBtn.addEventListener('click', ()=>{
   authFormBtn.classList.add('error')
+})
+
+
+const noteBtn = document.querySelectorAll('.popup__note-btn');
+const notePopup = document.querySelector('.popup__note');
+const notePopupClose = document.querySelector('.popup__note-link')
+const noteFormBtn = document.querySelector('.popup__note .popup__auth-btn');
+const noteNameInput = document.getElementById('name')
+const noteTelInput = document.getElementById('tel')
+const noteInstInput = document.getElementById('inst')
+
+for(let i of noteBtn){
+  i.addEventListener('click', ()=>{
+    notePopup.classList.add('active');
+    blockScroll();
+  })
+}
+
+notePopupClose.addEventListener('click', ()=>{
+  notePopup.classList.remove('active');
+  unblockScroll();
+})
+
+noteFormBtn.addEventListener('click', ()=>{
+  if(!noteNameInput.value.length){
+    noteFormBtn.classList.add('error-name')
+  }
+  else if(!noteTelInput.value.length){
+    noteFormBtn.classList.add('error-tel')
+  }
+  else if(!noteInstInput.value.length){
+    noteFormBtn.classList.add('error-inst')
+  }
+  else{
+    noteFormBtn.classList.add('success')
+
+    setTimeout(()=>{
+      notePopup.classList.remove('active');
+      unblockScroll();
+    }, 1000)
+  }
 })
 
 document.querySelectorAll('a[href^="#"').forEach(link => {
