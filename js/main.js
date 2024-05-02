@@ -25,6 +25,8 @@ function unblockScroll(){
   window.scrollTo(0, scrollY);
 }
 
+const popupLesson = document.querySelector('.popup__lesson');
+
 
 const burgerBtn = document.querySelector('.header__menu-btn');
 const burgerBtnText = document.querySelector('.header__menu-btn span');
@@ -40,6 +42,7 @@ burgerBtn.addEventListener('click', ()=>{
   else{
     blockScroll();
     burgerMenu.classList.add('active');
+    popupLesson?.classList.remove('active')
     burgerBtnText.textContent = 'ЗАКРЫТЬ'
     notePopup.classList.remove('active');
     authPopup.classList.remove('active');
@@ -66,6 +69,7 @@ authBtn.addEventListener('click', ()=>{
   else{
     blockScroll();
     authPopup.classList.add('active');
+    popupLesson?.classList.remove('active')
     burgerMenu.classList.remove('active');
     burgerBtnText.textContent = 'МЕНЮ';
     authBtnText.textContent = 'ВЫХОД';
@@ -90,6 +94,7 @@ const noteInstInput = document.getElementById('inst')
 for(let i of noteBtn){
   i.addEventListener('click', ()=>{
     notePopup.classList.add('active');
+    popupLesson?.classList.remove('active')
     blockScroll();
   })
 }

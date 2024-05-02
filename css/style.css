@@ -151,7 +151,7 @@ ul {
 
 /*/ header-menu /*/
 
-.header__menu, .popup__auth, .popup__note{
+.header__menu, .popup__auth, .popup__note, .popup__lesson{
   position: fixed;
   width: 100%;
   top: 54px;
@@ -386,7 +386,7 @@ ul {
 }
 
 
-.header__menu.active, .popup__auth.active, .popup__note.active{
+.header__menu.active, .popup__auth.active, .popup__note.active, .popup__lesson.active{
   
   transform: translateY(0%);
 }
@@ -426,7 +426,7 @@ ul {
   opacity: 0.6;
 }
 
-.header__menu .footer__soc-link::before{
+.header__menu .footer__soc-link::before, .popup__lesson-link::before{
   opacity: 0;
   background: linear-gradient(355deg, #85d3ff 0%, #00aeff 100%);
   box-shadow: 13px -2px 22px rgba(255, 255, 255, 0.12) inset;
@@ -441,7 +441,7 @@ ul {
   left: 0px;
 }
 
-.header__menu .footer__soc-link:hover::before{
+.header__menu .footer__soc-link:hover::before, .popup__lesson-link:hover::before{
   opacity: 1;
 }
 
@@ -482,6 +482,7 @@ ul {
   gap: 25px;
   margin-right: 116px;
 }
+
 
 .header__item-text {
   font-size: 10px;
@@ -1420,7 +1421,7 @@ ul .tariffs__list-item:last-child {
   letter-spacing: calc(25px / 10);
 }
 
-.header__btn-auth::before, .header__menu-btn::before{
+.header__btn-auth::before{
   content: unset;
 }
 
