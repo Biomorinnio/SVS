@@ -162,6 +162,22 @@ ul {
   transform: translateY(-110%);
 }
 
+.header__menu, .popup__auth{
+  height: max-content;
+}
+
+.header__menu .container{
+  position: relative;
+  display: block;
+}
+
+.header__menu-back{
+  position: absolute;
+  bottom: -4px;
+
+  width: 100%;
+}
+
 /*/ popup-note /*/
 
 .popup__note{
@@ -299,6 +315,13 @@ ul {
   display: flex;align-items: center;
   flex-direction: column;
   padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.popup__auth .header__menu-back{
+  z-index: -1;
+  bottom: -5.5px;
+  height: calc(100% + 5.5px);
 }
 
 .popup__auth-form{
@@ -453,6 +476,7 @@ ul {
 .header__menu .container{
   max-width: 734px;
   padding-top: 27px;
+  padding-bottom: 31px;
 }
 
 .header__menu .footer__nav-link{
@@ -1497,7 +1521,7 @@ button::before {
   opacity: 0;
   background: linear-gradient(355deg, #fff 0%, #fff 100%);
   box-shadow: 13px -2px 22px rgba(255, 255, 255, 0.12) inset;
-  filter: blur(25px);
+  filter: blur(35px);
   background-size: 100% 100%;
   content: "";
   position: absolute;
@@ -1560,15 +1584,37 @@ button::before {
   }
   .welcome__back-img {
     left: 51.7%;
-    bottom: -42px;
+    bottom: -6px;
   }
+  .welcome::before{
+    background: url(../img/welcome__back-laptop.png);
+    top: -99px;
+
+    height: calc(100% + 100px);
+  }
+
   .welcome__btn {
-    margin-top: 319px;
+    margin-top: 323px;
     font-size: 25px;
     letter-spacing: calc(25px / 19);
-    padding: 24px 72px;
+    padding: 24px 76px;
     border-radius: 10px;
   }
+  .welcome__btn::after{
+    background: linear-gradient(90deg, #00ABFC 63%, #00ABFC 100%);
+    content: '';
+    position: absolute;
+    width: calc(100% + 1px);
+    bottom: -3px;
+    height: 50px;
+    left: -0.5px;
+    border-radius: 10px;
+    z-index: -1;
+  }
+  .about__content .welcome__btn::after{
+    width: calc(100% + 0.5px);
+  }
+  
   .welcome__btn-back {
     width: 100%;
     height: 100%;
