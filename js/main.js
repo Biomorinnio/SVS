@@ -30,6 +30,8 @@ const popupLesson = document.querySelector('.popup__lesson');
 
 const burgerBtn = document.querySelector('.header__menu-btn');
 const burgerBtnText = document.querySelector('.header__menu-btn span');
+const burgerIconOpen = document.querySelector('.header__menu-open');
+const burgerIconClose = document.querySelector('.header__menu-close');
 const burgerMenu = document.querySelector('.header__menu');
 const burgerMenuLinks = document.querySelectorAll('.header__menu .footer__nav-link');
 
@@ -37,13 +39,16 @@ burgerBtn.addEventListener('click', ()=>{
   if(burgerMenu.classList.contains('active')){
     burgerMenu.classList.remove('active');
     burgerBtnText.textContent = 'МЕНЮ';
+    burgerIconClose.classList.remove('active');
     unblockScroll();
   }
   else{
     blockScroll();
     burgerMenu.classList.add('active');
-    popupLesson?.classList.remove('active')
-    burgerBtnText.textContent = 'ЗАКРЫТЬ'
+    popupLesson?.classList.remove('active');
+    burgerBtnText.textContent = 'ЗАКРЫТЬ';
+    burgerIconClose.classList.add('active');
+
     notePopup.classList.remove('active');
     authPopup.classList.remove('active');
   }
@@ -52,6 +57,7 @@ burgerBtn.addEventListener('click', ()=>{
 for(let i of burgerMenuLinks) i.addEventListener('click', ()=>{
   burgerMenu.classList.remove('active');
   burgerBtnText.textContent = 'МЕНЮ';
+  burgerIconClose.classList.remove('active');
   unblockScroll();
 });
 
@@ -72,6 +78,7 @@ authBtn.addEventListener('click', ()=>{
     popupLesson?.classList.remove('active')
     burgerMenu.classList.remove('active');
     burgerBtnText.textContent = 'МЕНЮ';
+    burgerIconClose.classList.remove('active');
     authBtnText.textContent = 'ВЫХОД';
     notePopup.classList.remove('active');
   }
