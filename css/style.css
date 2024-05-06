@@ -2386,13 +2386,17 @@ button::before {
     content: "";
     background: url("../img/about__back-mobile.png") no-repeat;
     background-size: 100% 490px;
-    top: -60px;
+    top: -80px;
     left: -20px;
     width: calc(100% + 40px);
     height: 490px;
     position: absolute;
 
     z-index: 0;
+  }
+  .about__descr{
+    position: relative;
+    z-index: 55;
   }
   .about__descr:last-of-type {
     padding: 30px 23px 24px 40px;
@@ -2628,8 +2632,9 @@ button::before {
   margin-left: 0px;
 }
 .learn__left-img{
-  width: 347px;
+  width: 392px;
   height: 289px;
+  margin-left: 6px;
 }
 .learn__inner-left {
   margin: 0px 0px 39px 0px;
@@ -2655,10 +2660,9 @@ button::before {
   margin-left: 64px;
   margin-bottom: -20px;
   height: 283px;
+  width: 405px;
 }
-.learn__left-img {
-  margin-left: 6px;
-}
+
 .program .for__toptitle {
   margin-top: 70px;
 }
@@ -2712,7 +2716,8 @@ button::before {
   left: 5px;
   width: calc(100% - 10px);
   height: 150%;
-  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='20' ry='20' stroke='white' stroke-width='2' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");  border-radius: 20px;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='20' ry='20' stroke='white' stroke-width='2' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: 20px;
   z-index: 0;
   border-top: none;
 }
