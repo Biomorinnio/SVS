@@ -2532,7 +2532,9 @@ button::before {
         margin-top: -10px;
   }
   .welcome::before {
-    background: url("../img/welcome__back-mobile.png");
+    background: url("../img/welcome__back-mobile.png") no-repeat ;
+    background-size: cover;
+
     top: -117px;
     height: calc(100% + 117px);
   }
